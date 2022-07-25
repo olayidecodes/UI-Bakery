@@ -1,25 +1,24 @@
 import React from 'react'
-import {Navbar} from '../containers'
+import { Banner, Navbar, News, Products, Sales } from '../containers/index'
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      HeroBanner
-
-      {/* <div>
-        <h2>TRENDING PRODUCTS</h2>
-        <p>Recreate your space for a whole lot less</p>
-      </div>
-
-      <div>
-        {['Product 1', 'Product 2'].map(
-          (product) => product)}
-      </div>
-
-      Footer */}
+      <Banner />
+      <Products />
+      
+      
+      
+      <Sales />
+      <News />
     </>
   )
 }
 
 export default Home
+
+{/* <Route path="signin" element={<SignIn />} />
+                  <Route path="video">
+                    <Route path=":id" element={<Video />}/>
+                  </Route> */}

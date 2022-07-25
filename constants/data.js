@@ -1,0 +1,50 @@
+const products = [
+    {
+        id: 1,
+        image: '',
+        name: "Corporis Suscipit Libor",
+        price: 116.00,
+        oldprice: 122.00,
+        star: 4,
+    },
+    {
+        id: 2,
+        image: '',
+        name: "Corporis Suscipit Libor",
+        price: 116.00,
+        oldprice: 122.00,
+        star: 5,
+    },
+    {
+        id: 3,
+        image: '',
+        name: "Corporis Suscipit Libor",
+        price: 116.00,
+        oldprice: 122.00,
+        star: 4,
+    },
+    {
+        id: 4,
+        image: '',
+        name: "Corporis Suscipit Libor",
+        price: 116.00,
+        oldprice: 122.00,
+        star: 5,
+    },
+    {
+        id: 5,
+        image: '',
+        name: "Corporis Suscipit Libor",
+        price: 116.00,
+        oldprice: 122.00,
+        star: 5,
+    },
+    {
+        id: 6,
+        image: '',
+        name: "Corporis Suscipit Libor",
+        price: 116.00,
+        oldprice: 122.00,
+        star: 2,
+    }
+]
