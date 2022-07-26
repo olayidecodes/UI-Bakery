@@ -1,5 +1,5 @@
 import React from 'react'
-import { Banner, Navbar, News, Products, Sales } from '../containers/index'
+import { Banner, Footer, Logos, Navbar, News, Products, Promotions, Sales, Specials } from '../containers/index'
 
 const Home = () => {
   return (
@@ -7,11 +7,12 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Products />
-      
-      
-      
       <Sales />
+      <Promotions />
+      <Specials />
       <News />
+      <Logos />
+      <Footer />
     </>
   )
 }

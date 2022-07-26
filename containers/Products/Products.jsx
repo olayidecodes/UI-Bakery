@@ -1,16 +1,34 @@
 import React from 'react'
-import { images, data } from '../../constants'
-
-const Product = ({product: {image, name, price, oldprice, stars}}) => {
+import { data } from '../../constants'
+import Image from 'next/image'
+import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
+const Product = ({product: {image, name, price, oldprice, rating}}) => {
+  
   return (
-    <div>
+    <div className='app__product'>
       <div className="app__product-image">
-        <img src={image} alt="" />
+        { image &&
+          (<Image src={image} 
+            alt = "Product Image" 
+            width="280" 
+            height= "350"
+            className='image'/> )
+        }
+      
       </div>
       <div className="app__product-info">
-        <p className="star">{stars}</p>
-        <p className="name">{name}</p>
-        
+        <div className='product__rating'>
+          {
+              Array(rating).fill().map((_) => (
+                  <p>⭐</p>
+              ))
+          }
+        </div>
+        <p className="product__name">{name}</p>
+        <div className="product__price">
+          <p className="product__present-price">{price}</p>
+          <p className="product__old-price">{oldprice}</p>
+        </div>
       </div>
     </div>
   )
@@ -31,7 +49,14 @@ const Products = () => {
           </ul>
         </div>
         <div className="app__productslisting-products">
-          {data.products.map((product) => <Product product={product} key={product.id})}
+          {data.products.map((product) => <Product product={product} key={product.id} />)}
+        </div>
+
+        <div className="app__products list-carousel">
+          <ul>
+            <li><FaArrowLeft />PREV</li>
+            <li>NEXT<FaArrowRight /></li>
+          </ul>
         </div>
       </div>
     </div>
