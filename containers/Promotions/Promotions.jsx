@@ -1,7 +1,8 @@
 import React from 'react'
-import { BsSuitHeart, BsTruck, BsHeadset } from 'react-icons/bs'
-import { FaShoppingBag, FaHeadset } from 'react-icons/fa'
-import { GiShoppingBag } from 'react-icons/gi'
+import { BsSuitHeart } from 'react-icons/bs'
+import { FiShoppingBag } from 'react-icons/fi'
+import { MdOutlineHeadsetMic } from 'react-icons/md'
+import {TbTruckDelivery} from 'react-icons/tb'
 
 const Promotions = () => {
   return (
@@ -17,7 +18,7 @@ const Promotions = () => {
                     <p>SATISFACTON</p>
                 </div>
                 <div className="upper-item">
-                    <BsTruck className='icon'/>
+                    <TbTruckDelivery className='icon'/>
                     <div className='quantity'>
                         <h1>60</h1>
                         <p>+</p>
@@ -25,7 +26,7 @@ const Promotions = () => {
                     <p>BRANDED WATCH</p>
                 </div>
                 <div className="upper-item">
-                    <GiShoppingBag className='icon'/>
+                    <FiShoppingBag className='icon'/>
                     <div className='quantity'>
                         <h1>900</h1>
                         <p>+</p>
@@ -33,7 +34,7 @@ const Promotions = () => {
                     <p>PRODUCT SALES</p>
                 </div>
                 <div className="upper-item">
-                    <BsHeadset className='icon'/>
+                    <MdOutlineHeadsetMic className='icon'/>
                     <div className='quantity'>
                         <h1>63</h1>
                         <p>+</p>
@@ -43,7 +44,7 @@ const Promotions = () => {
             </div>
 
             <div className="app__promotions-lower">
-                <div className="box">
+                <div className="box box1">
                     <h1><p>&</p>MID-SEASON SALE</h1>
                     <div className="text">
                         <p>STARTING FROM.</p>

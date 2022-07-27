@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Meddon&family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Baloo+2:wght@400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
 
 :root {
-  --font-base: 'Fira Sans', sans-serif;
-  --font-stylish: 'Megrim', cursive;
+  --font-base: 'Baloo 2', cursive;
+  --font-stylish: 'Alex Brush', cursive;
+  --font-basic: 'Barlow Semi Condensed', sans-serif;
 
   --color-red: rgb(233, 91, 91);
   --color-gray: rgb(147, 144, 140);
   --color-lightblack: rgb(26, 26, 26);
   --color-grey: rgb(84, 84, 84);
-  --color-darkgrey: rgb(30, 28, 28);
+  --color-darkgrey: rgb(42, 39, 39);
   --color-yellow: rgb(214, 193, 59);
 }
 
@@ -41,7 +42,7 @@ a {
   margin-bottom: 3rem;
 
   &_item{
-    max-width: 60rem;
+    max-width: 70rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +66,7 @@ a {
 }
 
 .list-carousel {
-  margin-top: 3rem;
+  margin-top: 2rem;
   
     ul{
       display: flex;
@@ -93,6 +94,10 @@ nav {
   width: 100%;
   display: block;
 
+  .menu {
+    display: none;
+  }
+
   
   .app__navbar-upper {
     display: flex;
@@ -108,8 +113,8 @@ nav {
 
       p {
         border: 1px solid rgb(84, 84, 84);
-        padding: 4px 7px;
-        font-size: 0.8rem;
+        padding: 3px 5px;
+        font-size: 0.7rem;
       }
     }
 
@@ -192,7 +197,8 @@ nav {
 
     h1 {
       font-size: 2.5rem;
-      margin: 0;
+      line-height: 2.5rem;
+      margin: 0 0 1rem 0;
     }
 
     p{
@@ -226,18 +232,22 @@ nav {
         width: 3rem;
         border: none;
         height: .15rem;
-        margin: 5px 0 2px;
+        margin: 5px 0 5px 0;
         background-color: var(--color-red);
       }
       p {
         font-size: 0.9rem;
+        line-height: 1rem;
       }
       button {
-        background-color: black;
+        background-color: var(--color-darkgrey);
         color: white;
         font-size: 0.8rem;
-        padding: 0.5rem 1rem;
+        padding: 0.2rem 0.9rem;
         margin-top: 1rem;
+        font-family: var(--font-base);
+        cursor: pointer;
+        border: none;
       }
     }
     .box2{
@@ -288,6 +298,8 @@ nav {
 
 }
 
+
+
 // Products Listings
 
 .app__productslisting {
@@ -301,6 +313,11 @@ nav {
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+
+    p{
+      font-family: var(--font-base);
+      font-style: italic;
+    }
 
 
     ul{
@@ -320,10 +337,12 @@ nav {
 
     
   &-products {
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 2rem;
+    gap: 2rem;
   }
 
   
@@ -409,6 +428,8 @@ nav {
     span {
       font-size: 0.9rem;
       line-height: 1.5rem;
+      font-family: var(--font-base);
+      font-style: italic;
     }
 
     button {
@@ -464,6 +485,7 @@ nav {
         p {
           font-weight: 900;
           font-size: 1.5rem;
+          color: black;
         }
       }
       p {
@@ -486,6 +508,7 @@ nav {
       padding: 0 2rem;
       justify-content: space-between;
       align-items: center;
+      gap: 1rem;
 
       h1 {
         font-size: 1.5rem;
@@ -550,11 +573,14 @@ nav {
   &-products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 3rem;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 2rem;
   }
 
 }
+
+
 
 // Each product for Special Products  ............
 
@@ -606,12 +632,14 @@ nav {
 }
 
 
-
-
-
 .app__news {
   display: flex;
-  margin-top: 1rem ;
+  margin: 2rem ;
+
+  p{
+    font-family: var(--font-base);
+    font-style: italic;
+  }
 
   &-box{
     margin-top: 1.5rem;
@@ -664,6 +692,7 @@ nav {
     display: flex;
     width: 70%;
     justify-content: space-between;
+    gap: 2rem;
 
     .items{
       display: flex;
@@ -684,6 +713,7 @@ nav {
         }
         p {
           color: var(--color-grey);
+          margin-top: 0;
         }
       }
     }
@@ -691,8 +721,453 @@ nav {
 }
 
 
-// App Footer Section    /////@at-root
+
+// App Footer Section    /////
 
 .app__footer {
   margin: 0;
+  background-color: black;
+
+  .app__footer_box {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+    width: 80%;
+
+    h3 {
+      color: var(--color-gray);
+    }
+    p, li, span{
+      color: var(--color-grey);
+    }
+
+    .picture-box{
+
+      background-color: var(--color-darkgrey);
+      width: 40rem;
+
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .image-box {
+        display: flex;
+
+        .image {
+          width: 11rem;
+          padding-right: 1rem;
+        }
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          font-size: 0.8rem;
+        }
+        hr {
+          height: 0.02rem;
+          border: none;
+          background-color: var(--color-grey);
+          width: auto;
+        }
+
+        .first {
+          margin-top: -1rem;
+        }
+        span {
+          font-size: 0.8rem;
+
+        }
+        .box-icons {
+          display: flex;
+          justify-content: end;
+          gap: 1rem;
+
+          .box-icon {
+            cursor: pointer;
+            gap: 1rem;
+            color: var(--color-gray);
+            
+          }
+        }
+        
+        
+      }
+    }
+  }
+
+  .links-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0 0.7rem 2rem;
+
+      button {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+        border: none;
+        background-color: var(--color-gray); 
+      }
+    }
+
+    hr {
+      height: 0.02rem;
+      border: none;
+      background-color: var(--color-grey);
+      width: auto;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 0rem 2rem;
+
+      h3 {
+        padding-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        
+        li {
+          font-size: 0.9rem;
+          line-height: 1rem;
+          display: flex;
+          gap: 1rem;
+          padding-bottom: 0.5rem;
+
+          .contact-icon {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
+
+
+// Media Queries
+
+@media only screen and (max-width: 1010px) {
+  .app__banner-upper {
+    .app__banner-box-2 {
+      .box1, .box4 {
+        padding: 2rem;
+      }
+    }
+  }
+
+  .app__banner-lower {
+    display: none;
+  }
+
+  .app__sales {
+    &-info {
+      margin-right: 15%;
+    }
+  }
+  .app__promotions-items {
+
+    .app__promotions-upper {
+      gap: 3rem;
+
+      .upper-item {
+        gap: 0rem;
+
+        .icon {
+          font-size: 1.7rem;
+          margin-bottom: 0rem;
+        }
+
+        .quantity {
+  
+          p {
+            font-weight: 700;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .app__promotions-lower {
+      .box {
+
+        gap: 1rem;
+
+        h1 {
+          font-size: 1.2rem;
+        }
+
+        span {
+          font-size: 1rem;
+        }
+
+      }
+    }
+  }
+
+  .app__footer {
+    &_box {
+      .links-box {
+        .links {
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .app__news {
+    &-box{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+    }
+  }
+
+  .app__logo {
+    .lower {
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .app__footer {
+  
+    .app__footer_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .picture-box {
+        width: 100%;
+        margin-bottom: 2rem;
+        .image-box {
+
+          .text {
+            width: 100%;
+            justify-content: space-evenly;
+          }
+
+          padding-right: 0rem;
+
+          hr {
+            width: 100%;
+          }
+
+          .image {
+            width: 8rem;
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .app__sales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &-info {
+      margin-right: 0;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 680px) {
+  nav {
+
+    .menu {
+      display: flex;
+      color: white;
+      font-size: 2rem;
+    }
+    .app__navbar-upper {
+      padding: 1rem 5%;
+
+      .app__navbar-upper-box {
+        display: none;
+      }
+
+      .app__navbar-upper-logo {
+        h1 {
+          font-size: 2rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      &-icons {
+        display: none;
+      }
+    }
+
+    .app__navbar-lower {
+      display: none;
+    }
+  }
+
+  .toggle__menu {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+
+    .app__navbar-upper-box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+
+      .dropdown {
+        display: flex;
+        gap: 1rem;
+
+        p {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .app__navbar-lower-links {
+      list-style: none;
+      display: flex;
+      padding-top: 2rem;
+      flex-direction: column;
+      text-align: center;
+
+        li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    }
+  }
+
+  .app__banner-upper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+    
+  }
+
+  .app__promotions {
+
+    &-lower {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+
+      .box1 {
+        border-bottom: 1px solid black;
+        padding-bottom: 1rem;
+        border-right: 0px;
+
+      }
+
+      .box  {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 620px) {
+  .app__news {
+  
+    .app__news-box{
+      
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .text {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 500px) {
+  .app__product {
+  
+    .app__product-image .image{
+      border-radius: 0 10% 0 10%;
+      
+    }
+  }
+
+  .app__logo {
+    .lower {
+      width: 100%;
+      margin: 0;
+      padding: 1rem 1rem;
+      gap: 0.5rem;
+    }
+  }
+
+  .app__footer {
+    .app__footer_box {
+      .links-box {
+        .links {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
