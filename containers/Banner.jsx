@@ -5,8 +5,8 @@ const Banner = () => {
     <>
       <div className='app__banner-upper'>
         <div className="app__banner-box-1">
-          <h1>Release,<br />New Styles!</h1>
-          <p>YOU THINK, WE BULID</p>
+          <h1>UI<br />Bakery</h1>
+          <p>Pastries for your taste bud</p>
         </div>
 
         <div className="app__banner-box-2">
@@ -14,7 +14,7 @@ const Banner = () => {
             <h3>New Stock</h3>
             <h1>HOME</h1>
             <hr />
-            <p>Make your Home Furnishing with Dreamful Decorative Products</p>
+            <p>The best pastries for your palette</p>
             <button type='button'>SHOP NOW</button>
           </div>
 
@@ -31,14 +31,14 @@ const Banner = () => {
             <h3>New Stock</h3>
             <h1>OFFICE</h1>
             <hr />
-            <p>Make your Home Furnishing with Dreamful Decorative Products</p>
+            <p>Made in a good hygienic environment</p>
             <button type='button'>SHOP NOW</button>
           </div>
 
         </div>
       </div>
 
-      <div className="app__banner-lower">
+      {/* <div className="app__banner-lower">
         <div className="app__banner-lower-box1">
           <h1>LUX TABLES</h1>
           <p>STYLUS COLLECTION</p>
@@ -51,7 +51,7 @@ const Banner = () => {
           <h1>ELEGANT STOOLS</h1>
           <p>STYLUS COLLECTION</p>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

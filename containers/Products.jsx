@@ -1,5 +1,5 @@
 import React from 'react'
-import { data } from '../../constants'
+import { data } from '../constants'
 import Image from 'next/image'
 import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
 
@@ -41,8 +41,8 @@ const Products = () => {
     <div className='app__wrapper'>
       <div className='app__productslisting app__wrapper_item'>
         <div className='app__productslisting-header'>
-          <h2>TRENDING PRODUCTS</h2>
-          <p>Bestselling Items In This Season</p>
+          <h2>AVAILABLE PRODUCTS</h2>
+          <p>Bestselling Pastries</p>
           <hr />
           <ul className='app__productslisting-header-links'>
             <li><a activeclassName="active" href="">FEATURED</a></li>

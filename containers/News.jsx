@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { images } from '../../constants'
+import { images } from '../constants'
 import { FaRegEye, FaRegComments } from 'react-icons/fa'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 

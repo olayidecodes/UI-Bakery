@@ -1,5 +1,5 @@
 import React from 'react'
-import { data } from '../../constants'
+import { data } from '../constants'
 import Image from 'next/image'
 import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
 

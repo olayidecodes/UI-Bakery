@@ -7,12 +7,12 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Products />
-      <Sales />
-      <Promotions />
-      <Specials />
-      <News />
-      <Logos />
-      <Footer />
+      {/* <Sales /> */}
+      {/* <Promotions /> */}
+      {/* <Specials /> */}
+      {/* <News /> */}
+      {/* <Logos /> */}
+      {/* <Footer /> */}
     </>
   )
 }

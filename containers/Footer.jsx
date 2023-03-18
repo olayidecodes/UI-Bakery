@@ -5,7 +5,7 @@ import { IoLocationSharp } from 'react-icons/io5'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 
-import { images } from '../../constants'
+import { images } from '../constants'
 
 const Footer = () => {
   return (

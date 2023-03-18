@@ -19,8 +19,8 @@ const Navbar = () => {
         </div>
 
         <div className="app__navbar-upper-logo">
-          <h1>Decore</h1>
-          <p>Modest Furniture Store</p>
+          <h1>Bakery</h1>
+          <p>University of Ibadan</p>
         </div>
 
         <div className="app__navbar-upper-icons">
@@ -37,7 +37,7 @@ const Navbar = () => {
         
       </div>
 
-      <div className="app__navbar-lower">
+      {/* <div className="app__navbar-lower">
         <ul className='app__navbar-lower-links'>
           <li><a href="">FURNITURE <MdOutlineKeyboardArrowDown /></a></li>
           <li><a href="">DINING</a></li>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <li><a href="">ACCESSORIES <MdOutlineKeyboardArrowDown /></a></li>
           <li><a href="">MORE <MdOutlineKeyboardArrowDown /></a></li>
         </ul>
-      </div>
+      </div> */}
 
         {
           
@@ -68,13 +68,13 @@ const Navbar = () => {
               </div>
 
                 
-              <ul className='app__navbar-lower-links'>
+              {/* <ul className='app__navbar-lower-links'>
                   <li><a href="">FURNITURE <MdOutlineKeyboardArrowDown /></a></li>
                   <li><a href="">DINING</a></li>
                   <li><a href="">LINEN & DECOR</a></li>
                   <li><a href="">ACCESSORIES <MdOutlineKeyboardArrowDown /></a></li>
                   <li><a href="">MORE <MdOutlineKeyboardArrowDown /></a></li>
-                </ul>
+                </ul> */}
 
             </div>
           )
