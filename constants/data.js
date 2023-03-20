@@ -4,7 +4,7 @@ const products = [
     {
         id: 1,
         image: images.product1,
-        name: "Agege Bread",
+        name: "Sliced Bread",
         price: "₦500.00",
         rating: 4,
     },
@@ -18,15 +18,15 @@ const products = [
     {
         id: 3,
         image: images.product3,
-        name: "Yeast bread",
-        price: "₦700.00",
+        name: "Mini bread",
+        price: "₦300.00",
         oldprice: "$122.00",
         rating: 4,
     },
     {
         id: 4,
         image: images.product4,
-        name: "Milk bread",
+        name: "Family-size bread",
         price: "₦700.00",
         oldprice: "₦800.00",
         rating: 5,
@@ -34,16 +34,9 @@ const products = [
     {
         id: 5,
         image: images.product5,
-        name: "Butter bread",
-        price: "₦600.00",
+        name: "Family sliced bread",
+        price: "₦900.00",
         rating: 5,
-    },
-    {
-        id: 6,
-        image: images.product6,
-        name: "Chocolate bread",
-        price: "₦800.00",
-        rating: 2,
     }
 ]
 
